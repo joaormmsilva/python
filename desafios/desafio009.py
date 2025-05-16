@@ -10,4 +10,4 @@ x8 = num * 8
 x9 = num * 9
 x10 = num * 10
 
-print("O numero escolhido foi {} \n x1 = {} \n x2 = {} \n x3 = {} \n x4 = {} \n x5 = {} \n x6 = {} \n x7 = {} \n x8 = {} \n x9 = {} \n x10 = {}".format(num, x1, x2, x3,x4,x5,x6,x7,x8,x9, x10))
+print("O numero escolhido foi {:2} \n x1 = {:2} \n x2 = {:2} \n x3 = {:2} \n x4 = {:2} \n x5 = {:2} \n x6 = {:2} \n x7 = {:2} \n x8 = {:2} \n x9 = {:2} \n x10 = {:2}".format(num, x1, x2, x3,x4,x5,x6,x7,x8,x9, x10))

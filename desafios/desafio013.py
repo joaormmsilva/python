@@ -1,4 +1,4 @@
-salario = 1556
+salario = float(4319.43)
 aumento = salario * 0.15
 novoSalario = aumento + salario
 
