@@ -1,4 +1,4 @@
-import random
+import random  
 
 aluno = input("digite o nome dos alunos que vao participar: ")
 alunos = aluno.split()
