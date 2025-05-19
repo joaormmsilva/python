@@ -7,4 +7,4 @@ cosseno = cos(ang)
 tangente = tan(ang)
 
 
-print("o angulo que vc escolheu foi {}\nO seno dele é {:.4f}\nO cosseno dele é {:.4f}\nE a tangente dele é {:.4f}".format(ang,seno,cosseno,tangente))
+print("o angulo que vc escolheu foi {}\nO seno dele é {:.2f}\nO cosseno dele é {:.2f}\nE a tangente dele é {:.2f}".format(ang,seno,cosseno,tangente))
