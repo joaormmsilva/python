@@ -1,12 +1,8 @@
-import random
+vel = float(input('Qual velocidade do seu carro: '))
+multa = (vel - 80) * 7
 
-numero = random.randint(0,5)
-resposta = int(input('Adivinhe um numero de 0 a 5: '))
-
-if numero == resposta:
-    print('voce acertou')
+if vel > 80:
+    print('Sua velocidade esta acima do limite da via (80Km)')
+    print('Voce foi multado em R${} pois estava a {}Km/h'.format(multa, vel))
 else:
-    print('voce errou o numero')
-    
-print(numero)
-print(resposta)
+    print('dirija sempre com segurança')
