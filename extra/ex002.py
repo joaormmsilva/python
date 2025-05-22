@@ -1,14 +1,12 @@
-idade = int(input('Escreva sua idade: '))
+venda = int(input('Valor do produto: '))
 
-if idade >= 5 and idade <7:
-    print('Você é um atleta Infantil')
-elif idade >= 8 and idade <=10:
-    print('Você é um atleta Iniciante')
-elif idade >= 11 and idade <=14:
-    print('Você é eum atleta Juvenil')
-elif idade >= 15 and idade <= 17:
-    print('Você é um atleta Junior')
-elif idade > 17:
-    print('Você é um atleta Sénior')
+if venda < 10:
+    lucro = venda * 0.70
+elif venda < 30:
+    lucro = venda * 0.50
+elif venda < 50:
+    lucro = venda * 0.40
 else:
-    print('Você ainda não tem idade para ser considerado um atleta')
+    lucro = venda * 0.30
+
+print('Nessa compra o lucro foi de R$ {:.2f} pois a compra foi no valor R$ {:.2f}'.format(lucro,venda))
