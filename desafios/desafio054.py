@@ -1,0 +1,1 @@
+frase = input("escreva uma frase: ")
