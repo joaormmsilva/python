@@ -1,6 +1,8 @@
 casa = float(input('qual o valor da casa: '))
 salario = float(input('qual o salario mensal: '))
-meses = int(input('Em quantos meses planeja pagar: '))
+anos = int(input('Em quantos anos planeja pagar: '))
+
+meses = anos * 12
 
 prestacao = casa / meses
 limite =salario * 0.30

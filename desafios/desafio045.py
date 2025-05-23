@@ -21,4 +21,5 @@ elif resposta == 'pedra' and computador == 'tesoura' or resposta == 'tesoura' an
     
 elif resposta == computador:
     print('deu empate')
+    print('Eu escolhi {} e vc escolheu {}'.format(computador, resposta))
     print('  ')
