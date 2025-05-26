@@ -17,6 +17,7 @@ while n != 0:
             par += 1
         else:
             impar += 1
+
             
 print(par, impar)
 print("acabou")
