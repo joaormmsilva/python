@@ -13,6 +13,7 @@ while True:
         conta = input("Vamos novamente escolha [impar/par]: ")
         jogador = int(input('Escolha seu numero: '))
         print(f'Você jogou {jogador} e eu joguei {computador} dando {res}')
+        print('\n')
         
     if res % 2 == 0 and conta == "impar" or res % 2 == 1 and 'par':
         break
