@@ -1,88 +1,27 @@
-nota100 = 0
-nota50 = 0
-nota20 = 0
-nota10 = 0
-nota1 = 0
-valor = 0
-saque = int(input('Qual o valor que deseja Sacar: '))
-verificar = saque
-if verificar > 100:
-    if saque > 100:
-        nota100 = saque // 100
-        valor = saque % 100
-        
-    if valor > 50:
-        nota50 = valor // 50
-        valor = valor % 50
+saque = int(input('Qual o valor que deseja sacar? '))
 
-    if valor > 20:
-        nota20 = valor // 20
-        valor = valor % 20  
+nota100 = saque // 100
+resto = saque % 100
 
-    if valor > 10:
-        nota10 = valor // 10
-        valor = valor % 10
+nota50 = resto // 50
+resto = resto % 50
 
-    if valor > 1:
-        nota1 = valor // 1
-        
-if verificar < 100:
-    if saque > 50:
-        nota50 = saque // 50
-        valor = saque % 50
+nota20 = resto // 20
+resto = resto % 20
 
-    if valor > 20:
-        nota20 = valor // 20
-        valor = valor % 20  
+nota10 = resto // 10
+resto = resto % 10
 
-    if valor > 10:
-        nota10 = valor // 10
-        valor = valor % 10
+nota1 = resto // 1
 
-    if valor > 1:
-        nota1 = valor // 1
-
-if verificar < 50:
-    if saque > 20:
-        nota20 = saque // 20
-        valor = saque % 20  
-
-    if valor > 10:
-        nota10 = valor // 10
-        valor = valor % 10
-
-    if valor > 1:
-        nota1 = valor // 1
-        
-if verificar < 20:
-    if saque > 10:
-        nota10 = saque // 10
-        valor = saque % 10
-
-    if valor > 1:
-        nota1 = valor // 1
-
-if verificar < 10:
-    if saque > 1:
-        nota1 = saque // 1
-    
-
-print(f'O valor vai ser dividido em \n{nota100} notas de R$ 100 \n{nota50} notas de R$ 50 \n{nota20} notas de R$ 20 \n{nota10} notas de R$ 10 \n{nota1} notas de R$ 1')
-    
-
-
-# if saque > 20:
-#     print(f'O valor vai ser dividido em \n{nota20} notas de R$ 20 \n{nota10} notas de R$ 10 \n{nota1} notas de R$ 1')
-    
-# if saque > 10:
-#     print(f'O valor vai ser dividido em \n{nota10} notas de R$ 10 \n{nota1} notas de R$ 1')
-    
-# if saque > 1:
-#     print(f'O valor vai ser dividido em \n{nota1} notas de R$ 1')   
-    
-     
-# else:
-#     print('O valor é invalido ')
-#     print('Só é possivel sacar notas de 100, 50, 20 e 10')
-
-
+print(f'O valor vai ser dividido em:')
+if nota100 > 0:
+    print(f'{nota100} nota(s) de R$ 100')
+if nota50 > 0:
+    print(f'{nota50} nota(s) de R$ 50')
+if nota20 > 0:
+    print(f'{nota20} nota(s) de R$ 20')
+if nota10 > 0:
+    print(f'{nota10} nota(s) de R$ 10')
+if nota1 > 0:
+    print(f'{nota1} nota(s) de R$ 1')
