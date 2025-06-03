@@ -1,20 +1,15 @@
-pares = []
-impares = []
-numeros = []
+numeros = [[],[]]
 
 for n in range(7):
-    num = (int(input(f'Digite o {n} numero: ')))
+    num = (int(input(f'Digite o {n+1} numero: ')))
     if num % 2 == 0:
-        pares.append(num)
+        numeros[0].append(num)
     else:
-        impares.append(num)
-        
+        numeros[1].append(num)
     
-    
-numeros.append(pares[:])
-numeros.append(impares[:])
 
 numeros[0].sort()
 numeros[1].sort()
+print('-='*25)
 print(f'Os valores pares digitador foram: {numeros[0]}')
 print(f'Os valores impares digitads foram: {numeros[1]}')
