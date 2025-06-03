@@ -5,6 +5,6 @@ parenteseDir = expressao.count(')')
 parentese = parenteseDir + parenteseEsq
 
 if parentese % 2 != 0:
-    print('a equação esta errada')
+    print('a expressão esta invalida')
 else:
     print('Expressão valida')

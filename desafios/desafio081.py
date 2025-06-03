@@ -1,7 +1,7 @@
 numeros = []
+pos = 1
 while True:
-    pos = 1
-    num = int(input(f'digite o {pos} valore'))
+    num = int(input(f'digite o {pos} valor'))
     pos += 1
     numeros.append(num)
     verif = input('Quer contuniar [S/N]: ').lower().strip()
