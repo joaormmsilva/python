@@ -1,37 +1,23 @@
-aluno = []
-dados = []
-nota = []
-medias = []
+from random import randint
+from time import sleep
+palpite = []
+jogos = []
 
-while True:
-    dados.append(str(input('digite seu nome: ')))
-    nota.append(int(input('Digite a primeira nota: ')))
-    nota.append(int(input('Digite a segunda nota: ')))
-    
-    media = sum(nota)/2
-    medias.append(media)
-    
-    dados.append(nota[:])
-    dados.append(medias[:])
+quantiJogos = int(input('Quanto jogos quer palpite? '))
 
+for n in range(quantiJogos):
     
-    aluno.append(dados[:])
+    while len(jogos) <= 6:
+        num = randint(1,60)
+        if num not in jogos:
+            jogos.append(num)
+        
+    jogos.sort()
+    palpite.append(jogos[:])
+    jogos.clear()
 
-    
-    ver = input('quer continuar? [s/n]: ').lower()
-    if ver == 'n':
-        break
-    
-    medias.clear()
-    nota.clear()
-    dados.clear()
-
-
-print('=-'*40)
-
-print(f'No. NOME  Media')
-for p, c in enumerataluno)):
-    
-    print(f'{aluno[c][0]:-^20} \nNa primeira prova {aluno[c][1][0]} \nNa segunda prova {aluno[c][1][1]} \nSua media é {aluno[c][2]}')
-    
-print(f'{"="*30}')
+print(f'{"SORTEADOR":=^35}')
+for i,jogo in enumerate(palpite):
+    print(f'jogo {i+1}: {jogo}')
+    sleep(1)
+print(f'{"="*40}')
