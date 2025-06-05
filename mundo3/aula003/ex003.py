@@ -14,6 +14,7 @@ brasil = []
 for c in range(0,3):
     estado['uf'] = input('Unidade federativa: ')
     estado['sigla'] = input('sigla do estado: ')
+    estado['DDD'] = int(input('DDD'))
     brasil.append(estado.copy())
       
 for e in brasil:
