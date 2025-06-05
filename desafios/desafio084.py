@@ -35,6 +35,3 @@ for l in leves:
     print(f'{l[0]} com {l[1]}')
     
 print('-='*30)  
-
-
-
