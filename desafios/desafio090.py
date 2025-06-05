@@ -18,8 +18,8 @@ for m in range(len(alunos)):
         alunos[m]['situação'] = 'aprovado'
         
 print('\nRELATÓRIO FINAL')
-print(f'{"No.":<4} {"NOME":<10} {"MÉDIA":>6} {"SITUAÇÃO":>10}')
+print(f'{"NOME":<10} {"MÉDIA":>6} {"SITUAÇÃO":>10}')
 print('-' * 35)
-for i, a in enumerate(alunos):
-    print(f'{i:<4} {a["nome"]:<10} {a["media"]:>6.1f} {a["situação"]:>10}')
-print('-' * 35)
+
+for c in alunos:
+    print(f'{c['nome']:<10} {c['media']:>6} {c['situação']:>10}')
