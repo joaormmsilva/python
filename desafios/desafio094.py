@@ -6,6 +6,11 @@ cont = 0
 while True:
     pessoa['nome'] = str(input('Digite seu nome: '))
     pessoa['sexo'] = str(input('digite seu sexo[M/F]: ')).lower().strip()
+    
+    while pessoa['sexo'] not in ['m', 'f']:
+        print('ERRO! Digite apenas M ou F.')
+        pessoa['sexo'] = input('Digite seu sexo [M/F]: ').strip().lower()
+        
     pessoa['idade'] = int(input('Digite sua idade: '))
     
     if pessoa['sexo'] == 'f':
