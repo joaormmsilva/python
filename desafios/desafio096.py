@@ -1,5 +1,5 @@
 def area(largura, comprimento):
-    areaTerreno = (largura * comprimento)
+    areaTerreno = largura * comprimento
     print(f'A area do terreno é {areaTerreno:.1f}m2')
     
     
