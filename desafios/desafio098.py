@@ -3,8 +3,9 @@ def contador(inicio,fim,passo):
     print(f'Contagem de {inicio} ate {fim} indo de {passo} em {passo}')
     if inicio < fim:
         while inicio <= fim:
-            print(inicio, end=' ')
+            print(inicio, end=' ',flush=True)
             inicio+=passo
+            sleep(0.5)
     else:
         while inicio > fim:
             print(inicio, end=' ')

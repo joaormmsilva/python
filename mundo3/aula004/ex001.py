@@ -7,12 +7,12 @@
 # soma(2, 20)
 # soma(15, 20)
 
-# def contador(*num):
-#     print(num)
+def contador(*num):
+    print(num)
 
-# contador(2,1,6)
-# contador(5,2,1,5)
-# contador(2,1,6,2,6)
+contador(2,1,6)
+contador(5,2,1,5)
+contador(2,1,6,2,6)
 
 def dobra(lst):
     pos = 0
