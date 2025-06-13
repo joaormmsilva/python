@@ -1,22 +1,21 @@
-def notas(msg):
-    while True:
-        aluno['nome'] = input('Nome do aluno: ')
-        nota1 = int(input('Qual a nota da primeira prova do aluno: '))
-        nota2 = int(input('Qual a nota da segunda prova do aluno: '))
-        media.append(nota1)
-        media.append(nota2)
-        aluno['nota1'] = nota1
-        aluno['nota2'] = nota2
-        alunos.append(aluno)
-        veri = input('Quer continuar?[s/n]: ').lower()
-        if veri == 'n':
-            break
+def notas(*num, situacao=False):
+    res = {}
+    res['total'] = len(num)
+    res['maior'] = max(num)
+    res['menor'] = min(num)
+    res['media'] = sum(num) / len(num)
+    
+    if situacao:
+        if res['media'] >= 7:
+            res['situacao'] = 'boa'
+        elif res['media'] >= 5:
+            res['situação'] = 'Razoável'
+        else:
+            res['situação'] = 'Ruim'
+            
+    return res
 
-
-aluno = {}
-alunos = []
-media = []
-
-aluno = notas()
+resultado = notas(5.5, 8.5, 10, 6.5, situacao=True)
+print(resultado)
 
         
