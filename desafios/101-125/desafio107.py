@@ -1,4 +1,4 @@
-from uteis import moeda 
+from utilidadesCeV import dado, moeda
 
-p = float(input('Digite o preço: R$'))
-moeda.resumo(p, int(input('quantos porcento quer aumentar ')), int(input('quantos porcento quer aumentar ')))
+p = dado.leiaDinheiro('Digite o preço: R$ ')
+moeda.resumo(p, 80, 35)
