@@ -1,4 +1,4 @@
-numero = input("Digite um numero: ")
+numero = int(input("Digite um numero: "))
 
 if numero %2 == 0:
     print('esse numero é par')
