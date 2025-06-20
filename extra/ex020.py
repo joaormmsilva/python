@@ -5,8 +5,13 @@ def numero(n):
         
 alfabeto = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']       
 resposta = []
+escolha = int(input("Escolha um numero entre 1 e 26 : "))
 
-numero(int(input("Escolha o numero da letra que quer: ")))
-
+if escolha >26:
+    print('Numero fora dos paremetros ')
+    numero(int(input('Escolha outro numero: ')))
+    print(resposta)  
+else:
+    numero(escolha)
+    print(resposta)  
     
-print(resposta)
